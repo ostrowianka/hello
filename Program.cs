@@ -6,7 +6,9 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Anna");            
+            Console.WriteLine("Podaj a");  
+            string a = Console.ReadLine();
+            Console.WriteLine($"a={a}");
         }
     }
 
