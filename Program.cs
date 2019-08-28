@@ -6,9 +6,13 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Podaj a");  
-            string a = Console.ReadLine();
-            Console.WriteLine($"a={a}");
+            double a, b, wynik;
+            Console.WriteLine("podaj a");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("podaj b");
+            b = double.Parse(Console.ReadLine());
+            wynik = a + b;
+            Console.WriteLine("wynik =" + wynik);
         }
     }
 
