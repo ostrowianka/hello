@@ -6,13 +6,25 @@ namespace hello
     {
         static void Main(string[] args)
         {
-            double a, b, wynik;
-            Console.WriteLine("podaj a");
+            double a, b, sum;
+            Console.WriteLine("enter a");
             a = double.Parse(Console.ReadLine());
-            Console.WriteLine("podaj b");
+            Console.WriteLine("enter b");
             b = double.Parse(Console.ReadLine());
-            wynik = a + b;
-            Console.WriteLine($"wynik= {wynik}");
+            sum = a + b;
+            Console.WriteLine($"sum result= {sum}");
+
+            var result = Devide(a, b);
+            Console.WriteLine(result);
+        }   
+        public static double Devide(double a, double b)
+        {
+            if (b!=0)
+            {          
+            var result = a/b;
+            return result;
+            }
+            throw  new DivideByZeroException();
         }
     }
 
