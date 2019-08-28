@@ -12,7 +12,7 @@ namespace hello
             Console.WriteLine("podaj b");
             b = double.Parse(Console.ReadLine());
             wynik = a + b;
-            Console.WriteLine("wynik =" + wynik);
+            Console.WriteLine($"wynik= {wynik}");
         }
     }
 
